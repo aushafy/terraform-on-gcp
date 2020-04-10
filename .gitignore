@@ -30,3 +30,6 @@ override.tf.json
 
 # ignore for credentials
 testing-051ca839a820.json
+
+# ignore for terraform runtime
+terraform.exe
