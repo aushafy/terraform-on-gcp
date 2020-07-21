@@ -1,14 +1,13 @@
 resource "google_compute_firewall" "default" {
-  name    = "test-firewall"
+  name    = "dev-salt-firewall"
   network = "default"
-  //network = google_compute_network.default.name
-  description = "firewall for income traffic"
+  description = "firewall for income traffic of saltstack"
   allow {
     protocol = "icmp"
   }
 
   allow {
     protocol = "tcp"
-    ports    = ["80", "8080"]
+    ports    = ["80", "8080", "22"]
   }
 }

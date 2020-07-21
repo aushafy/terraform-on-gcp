@@ -30,6 +30,12 @@ override.tf.json
 
 # ignore for credentials
 testing-051ca839a820.json
+enhanced-*
+
+# ignore for ssh pub and private key 
+.ssh
 
 # ignore for terraform runtime
 terraform.exe
+
+grep-ip-gce.txt
